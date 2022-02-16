@@ -135,7 +135,7 @@ class Child(Parent):
         print("Child __init__")
 
 child = Child()    # child init will be executed
-print(child.__mro__)    # To get the method resolution order for inherited classes
+print(child.__class__.__mro__)    # To get the method resolution order for inherited classes
 ```
 
 ## Multiple Inheritance MRO
@@ -161,7 +161,7 @@ class Child(Parent2, Parent):
         Parent.__init__(self, "akash") 
 
 child = Child()    # child init will be executed
-print(child.__mro__)    # To get the method resolution order for inherited classes
+print(child.__class__.__mro__)    # To get the method resolution order for inherited classes
 ```
 
 # Composition and Aggregation
