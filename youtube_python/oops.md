@@ -85,7 +85,8 @@ class Hello:
 class Polygon:
     __width = None        # private vars can not be inherited
 class Triangle(Polygon):
-    print(self.__width)    # Throws error
+    def print(self):
+        print(self.__width)    # Throws error
 
 # Solution is to provide access of private var using getter and setters (defined as public member functions)
 class Polygon:
@@ -95,7 +96,8 @@ class Polygon:
         return self.__width
 
 class Triangle(Polygon):
-    print(self.get_width)    # Will be able to access the width value
+    def print(self):
+        print(self.get_width)    # Will be able to access the width value
 ```
 
 # Modules in python
