@@ -26,10 +26,9 @@ One big reason for using frozenset is that you can use it as a key in a hashable
 class Hello:
     def __init__():
         pass
-```
 # create its object
 hello = Hello()    # Will throw error as init takes 0 positional args but 1 was given
-
+```
 - Can we create multiple init method in class
 - It is not possible to provide multiple init method in python class. init method which is defined in the last will be considered as the main init method and other will be overridden
 - How do I create instances with variable number of args
