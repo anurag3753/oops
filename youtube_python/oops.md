@@ -22,9 +22,11 @@ One big reason for using frozenset is that you can use it as a key in a hashable
 - self is essentially the current object. It is similar to using `this` in c++/java. 
 - It is convention to use `self` keyword to indicate that this is the current object. Even though we can use other variable names too.
 - self is automatically passed when we initialize a class. So the below syntax will throw error as:
+```python
 class Hello:
     def __init__():
         pass
+```python
 # create its object
 hello = Hello()    # Will throw error as init takes 0 positional args but 1 was given
 
