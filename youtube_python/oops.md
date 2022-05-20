@@ -26,7 +26,7 @@ One big reason for using frozenset is that you can use it as a key in a hashable
 class Hello:
     def __init__():
         pass
-```python
+```
 # create its object
 hello = Hello()    # Will throw error as init takes 0 positional args but 1 was given
 
